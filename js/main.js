@@ -1,14 +1,25 @@
-const button = document.querySelector('.header_toggle')
+const button = document.querySelector('.header_toggle-button')
 const icon = document.querySelector('i')
+const active = document.querySelector('.active')
 
 // text 
 const text = document.querySelector('.header_text')
 text.textContent = 'Home'
 
 // button
-button.addEventListener('click', () => {
-
+button.addEventListener('click', (e) => {
+	e.preventDefault()
+	button.classList.toggle('active')
+	showIcon()
 })
 
 // icon
-icon.classList.add('fa-solid', 'fa-moon')
+
+function showIcon(){
+	if (active === active){
+		console.log(active)
+	}
+}
+
+
+
