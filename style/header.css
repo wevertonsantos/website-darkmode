@@ -1,0 +1,57 @@
+@import url('main.css');
+
+/* header */
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	padding: 5em 10em;
+}
+
+#header a{
+	align-self: center;
+}
+
+.header_text{
+	font-size: 2em;
+	color: var(--white);
+}
+
+.header_toggle{
+	display: flex;
+	height: 50px;
+	width: 100px;
+	border-radius: 40px;
+	background: var(--white);
+}
+
+.header_toggle-button{
+	margin-left: 5px;
+	align-self: center;
+	display: flex;
+	height: 40px;
+	width: 45px;
+	border-radius: 100%;
+	background: var(--orange);
+	cursor: pointer;
+}
+
+.fa-moon{
+	color: var(--white);
+	align-self: center;
+	padding-left: 10px;
+	font-size: 2em;
+}
+
+/* responsive */
+
+@media screen and (max-width: 960px){
+	#header{
+		padding: 5em 0;
+		align-items: center;
+		flex-direction: column;
+	}
+	.header_text{
+		margin-bottom: 1em;
+	}
+}
