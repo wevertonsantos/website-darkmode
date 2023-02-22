@@ -1,25 +1,29 @@
-const button = document.querySelector('.header_toggle-button')
-const icon = document.querySelector('i')
-const active = document.querySelector('.active')
+const button = document.querySelector('.header_label')
+const moon = document.querySelector('#moon')
+const sun = document.querySelector('#sun')
+const body = document.querySelector('body')
 
 // text 
 const text = document.querySelector('.header_text')
 text.textContent = 'Home'
 
-// button
-button.addEventListener('click', (e) => {
+sun.classList.remove('fa-sun')
+
+// check
+moon.addEventListener('click', (e) => {
 	e.preventDefault()
-	button.classList.toggle('active')
-	showIcon()
+	body.classList.add('dark')
+	body.classList.remove('default')
+	moon.classList.remove('fa-moon')
+	sun.classList.add('fa-sun')
+
 })
 
-// icon
+sun.addEventListener('click', (e) => {
+	e.preventDefault()
+	body.classList.add('default')
+	body.classList.remove('dark')
+	sun.classList.remove('fa-sun')
+	moon.classList.add('fa-moon')
 
-function showIcon(){
-	if (active === active){
-		console.log(active)
-	}
-}
-
-
-
+})
