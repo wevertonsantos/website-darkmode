@@ -43,13 +43,12 @@
 	border-radius: 20px;
 	padding: 4px 9px;
 
-	color: var(--dark);
+	color: var(--white);
 	font-size: 2em;
 }
 
 .fa-sun{
-	position: absolute;
-	color: var(--orange);
+	color: var(--white);
 
 	right: 160px;
 	background: rgba(54, 54, 54);
@@ -62,7 +61,7 @@
 
 /* responsive */
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1280px){
 	#header{
 		padding: 5em 0;
 		align-items: center;

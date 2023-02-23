@@ -6,11 +6,11 @@
 :root{
 	--orange: rgba(255, 170, 100);
 	--white: #fff;
-	--dark: rgba(15,0,40);
+	--dark: rgba(54, 54, 54);
 }
 
 body.dark{
-	background: rgba(54, 54, 54);
+	background: var(--dark);
 }
 
 body.default{
