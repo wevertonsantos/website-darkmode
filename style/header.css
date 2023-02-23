@@ -1,4 +1,4 @@
-@import url('main.css');
+@import url('style.css');
 
 /* header */
 
@@ -37,6 +37,8 @@
 	cursor: pointer;
 }
 
+/* icons */
+
 .fa-moon{
 	background: var(--orange);
 
@@ -61,7 +63,7 @@
 
 /* responsive */
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 980px){
 	#header{
 		padding: 5em 0;
 		align-items: center;

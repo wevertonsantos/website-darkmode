@@ -5,7 +5,13 @@ const body = document.querySelector('body')
 
 // text 
 const text = document.querySelector('.header_text')
-text.textContent = 'Home'
+text.textContent = '<home/>'
+
+const mainText = document.querySelector('.main_text')
+mainText.textContent = '<orangeMode/>'
+
+const title = document.querySelector('title')
+title.textContent = '<switchYourself/>'
 
 sun.classList.remove('fa-sun')
 
@@ -16,7 +22,7 @@ moon.addEventListener('click', (e) => {
 	body.classList.remove('default')
 	moon.classList.remove('fa-moon')
 	sun.classList.add('fa-sun')
-
+	mainText.textContent = '<darkMode/>'
 })
 
 sun.addEventListener('click', (e) => {
@@ -25,5 +31,5 @@ sun.addEventListener('click', (e) => {
 	body.classList.remove('dark')
 	sun.classList.remove('fa-sun')
 	moon.classList.add('fa-moon')
-
+	mainText.textContent = '<orangeMode/>'
 })
