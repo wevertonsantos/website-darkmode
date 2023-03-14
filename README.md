@@ -1,5 +1,6 @@
-<h1>push to down button for apply dark mode</h1>
+<h1>Apertando botão toggle e mudando o site para modo dark</h1>
 
-<p>techs: HTML, CSS and JS </p>
+<p>Techs: HTML, CSS and JS </p>
 
+<p>Link do site hospedado para dar uma olhada:<p>
 https://wevertonsantos.github.io/website-darkmode/
