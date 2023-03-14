@@ -11,3 +11,9 @@ main{
 	color: var(--white);
 	transition: 2s;
 }
+
+@media screen and (max-width:960px){
+	.main_text{
+		font-size: 2em;
+	}
+}
